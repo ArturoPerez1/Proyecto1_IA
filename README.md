@@ -16,9 +16,6 @@ Esta fase cubre la exploración de datos, preprocesamiento y entrenamiento del m
 
 2.  **Cargar el Dataset:**
     * Necesitas el archivo `winequality-red.csv` (o `winequality-white.csv` si estás utilizando ese).
-    * **Opción A (Recomendada - Persistente): Subir a Google Drive:**
-        * Sube el archivo `winequality-red.csv` a tu Google Drive (ej. dentro de una carpeta `proyectos_ml`).
-    * **Opción B (Temporal - Para la sesión actual de Colab):**
         * En el panel lateral izquierdo de Colab, haz clic en el icono de la carpeta (`Files`).
         * Haz clic en el icono de "Upload to session storage" (la flecha hacia arriba).
         * Selecciona tu archivo `winequality-red.csv`. Ten en cuenta que este archivo se borrará cuando la sesión de Colab finalice.
