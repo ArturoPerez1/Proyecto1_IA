@@ -20,13 +20,12 @@ Esta fase cubre la exploración de datos, preprocesamiento y entrenamiento del m
         * Haz clic en el icono de "Upload to session storage" (la flecha hacia arriba).
         * Selecciona tu archivo `winequality-red.csv`. Ten en cuenta que este archivo se borrará cuando la sesión de Colab finalice.
 
-3.  **Copiar y Ejecutar el Código de Colab:**
-    * Copia todo el código Python proporcionado para las Fases 1 y 2 (exploración, preprocesamiento con `KNNImputer` y `StandardScaler`, y entrenamiento del `RandomForestRegressor`). Este código incluye la lógica para guardar los preprocesadores y el modelo.
-    * Pégalo en una celda de tu Notebook de Colab.
-    * **¡MUY IMPORTANTE!:** En la línea `file_path_drive = '/content/drive/MyDrive/winequality-red.csv'`, **actualiza la ruta** para que apunte a la ubicación real de tu archivo CSV en Google Drive. Si lo subiste directamente a la sesión (Opción B), la ruta sería simplemente `winequality-red.csv`.
-    * Ejecuta la celda (presiona `Shift + Enter` o haz clic en el botón de "Play").
+3.  **Carga y Ejecutar el Código de Colab:**
+    * Carga el código `modeloPredictor.ipynb` al colab este código se encuentra en la carpeta de modelos
+    * **¡MUY IMPORTANTE!:** En la línea `file_path_drive = '/content/drive/MyDrive/winequality-red.csv'`, **actualiza la ruta**
+    * Ejecuta el código.
 
-4.  **Verificar la Ejecución en Colab:**
+5.  **Verificar la Ejecución en Colab:**
     * Observa la salida en el Notebook para asegurarte de que el dataset se cargue correctamente y el modelo se entrene sin errores.
     * Al final de la ejecución, deberías ver mensajes confirmando que los archivos `.joblib` (el modelo, el `imputer` y el `scaler`) han sido guardados exitosamente.
 
@@ -34,14 +33,10 @@ Esta fase cubre la exploración de datos, preprocesamiento y entrenamiento del m
 
 Estos archivos son el corazón de tu aplicación local, ya que contienen el modelo entrenado y los objetos de preprocesamiento.
 
-1.  **Acceder a Google Drive:**
-    * Abre tu Google Drive en el navegador web (la misma cuenta que usaste con Colab).
-    * Navega a la carpeta donde Colab guardó los archivos (`wine_quality_imputer.joblib`, `wine_quality_scaler.joblib`, `wine_quality_model.joblib`). Por defecto, si usaste `/content/drive/MyDrive/`, estarán en la raíz de "Mi unidad" o en la subcarpeta que hayas especificado.
-
-2.  **Descargar los Archivos:**
+1.  **Descargar los Archivos:**
     * Selecciona los tres archivos `.joblib`.
     * Haz clic derecho sobre ellos y selecciona `Descargar`.
-    * Guárdalos en una carpeta en tu computadora. Se recomienda crear una carpeta específica para este proyecto (ej. `C:\proyectos\wine_predictor_app` en Windows o `~/proyectos/wine_predictor_app` en macOS/Linux).
+    * Guárdalos en una carpeta en tu computadora. Específicamente en la carpeta de modelos que se encuentra en el proyecto
 
 ### 3. Crear Entorno Virtual en Python (Local)
 
