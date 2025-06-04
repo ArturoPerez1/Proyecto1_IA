@@ -89,19 +89,15 @@ Con el entorno virtual activo en la terminal de VS Code:
 
 Finalmente, ejecutarás la aplicación de escritorio.
 
-1.  **Crear el Archivo de la GUI:**
-    * En VS Code, crea un nuevo archivo en la raíz de tu proyecto llamado `app_predictor_vino.py`.
-    * Copia y pega el código completo de la aplicación GUI (el que incluye la interfaz Tkinter y la lógica de predicción) en este archivo.
-
-2.  **Verificar Rutas de Archivos en la GUI:**
-    * Abre `app_predictor_vino.py` y asegúrate de que las rutas a los archivos `.joblib` sean correctas. Si los guardaste en la misma carpeta que `app_predictor_vino.py`, las rutas por defecto ya deberían ser correctas:
+1.  **Verificar Rutas de Archivos en la GUI:**
+    * Abre `app_predictor_vino.py` y asegúrate de que las rutas a los archivos `.joblib` sean correctas. Si los guardaste en la carpeta `modelos`, las rutas por defecto ya deberían ser correctas:
         ```python
-        MODEL_PATH = 'wine_quality_model.joblib'
-        IMPUTER_PATH = 'wine_quality_imputer.joblib'
-        SCALER_PATH = 'wine_quality_scaler.joblib'
+        MODEL_PATH = 'modelos\wine_quality_model.joblib'
+        IMPUTER_PATH = 'modelos\wine_quality_imputer.joblib'
+        SCALER_PATH = 'modelos\wine_quality_scaler.joblib'
         ```
 
-3.  **Ejecutar la Aplicación:**
+2.  **Ejecutar la Aplicación:**
     * Asegúrate de que tu entorno virtual `(myenv)` esté activo en la terminal de VS Code.
     * Ejecuta el script de la aplicación:
         ```bash
